@@ -1,13 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: homepage-config
-  namespace: dev
+  name: {{ .Release.Name }}-nginx-app
 data:
   index.html: |
     <html>
     <head>
-      <title>Welcome to Nginx Dev</title>
+      <title>Welcome to Nginx</title>
     </head>
     <body>
       <h1>Welcome to Nginx in Development Environment</h1>
