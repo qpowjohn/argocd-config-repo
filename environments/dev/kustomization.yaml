@@ -1,2 +1,2 @@
 resources:
-  - homepage.yaml
+  - https://github.com/qpowjohn/argocd-config-repo/blob/main/homepage.yaml
