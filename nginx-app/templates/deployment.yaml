@@ -21,7 +21,6 @@ spec:
           volumeMounts:
             - name: config-volume
               mountPath: /usr/share/nginx/html
-              subPath: index.html
           resources:
             requests:
               memory: "64Mi"
