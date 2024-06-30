@@ -22,6 +22,13 @@ spec:
             - name: config-volume
               mountPath: /usr/share/nginx/html
               subPath: index.html
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
       volumes:
         - name: config-volume
           configMap:
